@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import skimage
 import atmospheric_turbulence_mitigation.registration as reg
 
-PATTERN_PATH = "../resources/OTIS_PNG_Gray/Fixed Patterns/Pattern15"
+PATTERN_PATH = "/resources/OTIS_PNG_Gray/Fixed Patterns/Pattern15"
 GT = skimage.io.imread(f"{PATTERN_PATH}/GT/Pattern15_GT.png")
 
 
