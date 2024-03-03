@@ -1,0 +1,19 @@
+[project]
+name = "atmospheric-turbulence-mitigation"
+version = "0.0.1"
+authors = [
+  { name="Jackson Evans-Floit", email="jacksonevansfloit@gmail.com" },
+]
+description = "A Python library with tools for atmospheric turbulence mitigation"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/aStick112/atmospheric-turbulence-mitigation"
+Issues = "https://github.com/aStick112/atmospheric-turbulence-mitigation/issues"
+
