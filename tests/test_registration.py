@@ -6,9 +6,10 @@ import glob
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import skimage
+import os
 import atmospheric_turbulence_mitigation.registration as reg
 
-PATTERN_PATH = "/resources/OTIS_PNG_Gray/Fixed Patterns/Pattern15"
+PATTERN_PATH = "./resources/OTIS_PNG_Gray/Fixed Patterns/Pattern15"
 GT = skimage.io.imread(f"{PATTERN_PATH}/GT/Pattern15_GT.png")
 
 
@@ -76,7 +77,11 @@ def main():
         xticks=[], yticks=[]
     )
 
+    if not os.path.exists("outputs"):
+        os.makedirs("outputs")
+
     plt.savefig(f"outputs/output@{datetime.now().strftime('%Y-%m-%d %H%M%S')}")
+
     plt.show()
 
 
